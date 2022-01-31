@@ -18,5 +18,12 @@ I also recommend having your apt-get list in a separate file since dotbot will n
 Using the plugin will look something like this:
 
 ```bash
-./install -p dotbot-apt/apt.py -c packages.conf.yaml
+sudo ./install -p dotbot-apt/apt.py -c packages.conf.yaml
+```
+
+Example `packages.conf.yaml` file:
+
+```yaml
+- apt:
+  - jq
 ```
